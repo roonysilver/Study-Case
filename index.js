@@ -40,6 +40,7 @@ function moveUp() {
     }
 };
 // make songoku fly up. use getComputerStyle to get id from CSS
+
 function moveDown() {
     let topPosition = window.getComputedStyle(shooter).getPropertyValue('top');
     if (shooter.style.top === "440px") {
@@ -124,7 +125,7 @@ function moveMonster(monster) {
         } else {
             monster.style.left = `${xPosition - 4}px` ;
         }
-    } , 10);
+    } , 18);
 }
 //this is where you can make monster fly, it's speed , monter will be removed if they are "dead-monster" 
 // or they will win if the reach the left side of screen!
